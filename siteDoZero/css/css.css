@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000; /* Cor do cabeçalho preta */
+    color: #fff;
+    padding: 40px 20px; /* Aumento de 7px na altura do cabeçalho */
+    display: flex;
+    justify-content: center; /* Alinha os itens ao centro */
+    align-items: center;
+    position: fixed; /* Fixar no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Garante que ocupe toda a largura da tela */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+header img:first-of-type {
+    left: 40px; /* Ícone à esquerda */
+    position: relative; /* Garante que este ícone não interfira no nome da loja */
+}
+
+#lupa {
+    position: absolute;
+    /* Adicione a posição desejada para o ícone 'lupa' */
+    left: 20px; /* Exemplo: mova para a esquerda */
+}
+
+.right-icons {
+    position: absolute;
+    right: 40px; /* Posiciona os ícones restantes à direita */
+    display: flex;
+    gap: 20px; /* Espaço entre os dois ícones */
+}
+
+.right-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.store-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o nome da loja */
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    filter: brightness(0) invert(1); /* Torna o ícone branco */
+}
+
+img#lupa, img#carrinho, img#mudar {
+    width: 30px; /* Ajuste o tamanho dos ícones, se necessário */
+    height: 30px;
+    object-fit: contain;
+}
